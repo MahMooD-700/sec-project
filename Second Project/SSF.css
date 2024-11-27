@@ -306,14 +306,27 @@ gap: 30px;}
 height: 490px;
 border: 1px solid var(--primary);
 border-radius: 10px;
-padding: 20px 0 0 25px ;}
+padding: 20px 0 0 25px ;
+}
+.foto33,
+.foto22,
+.foto11{overflow: hidden;
+    border-radius: 10px;
+transition: all 0.5 ease;}
 .foto1,
 .foto2,
 .foto3
 {width: 400px;
 height: 260px;
 border-radius: 10px;
-padding: 0 0 0 0 ;}
+padding: 0 0 0 0 ;
+border: 1px solid rgba(0, 0, 0, 0);}
+.foto1:hover,
+.foto2:hover,
+.foto3:hover{transform: scale(1.1);}
+
+
+
 .s8{width: 1410px;
 height: 415px;
 display: flex;
@@ -361,4 +374,26 @@ height: 200px;
 font-weight: 100;}
 
 
+.rc{position: fixed;
+    bottom: 3px;
+    right: 10px;
+    font-size: 50px;
+    width: 60px;
+    height: 60px;
+color: green;
+background-color: #000;
+border-radius: 50%;
+text-align: center;
+animation: R 1s ease-in-out 0s infinite normal none;
+transition: all 0.5s ease;
+
+}
+@keyframes R {
+    0%{transform: rotate(0deg) scale(1.2);
+        color: rgb(0, 0, 0);
+        background-color: green; }
+    100%{transform: rotate(360deg) scale(1.2);
+        color: green;
+        background-color: #000;}  
+}
 
